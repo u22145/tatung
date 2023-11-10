@@ -1,0 +1,30 @@
+.detailPage {
+  padding: 30px 20px 20px 20px;
+  background: linear-gradient(
+    to bottom,
+    #fedb3f 30%,
+    #ff7928 50%,
+    #fedb3f 100%
+  );
+  .item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 80px;
+
+    a {
+      margin-top: 20px;
+      display: block;
+      width: 49%;
+      img {
+        width: 100%;
+      }
+    }
+    & + a {
+      display: block;
+      width: 200px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+  }
+}

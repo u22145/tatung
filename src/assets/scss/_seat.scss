@@ -1,0 +1,185 @@
+:root {
+  --main: #ffec57;
+  --bgColor: #fffcf0;
+  --main1: #505050;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+#app {
+  background-image: url(@/assets/img/index/slickBoxBg.png);
+  background-repeat: repeat;
+  background-size: 750px 740px;
+}
+
+header {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 5px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  opacity: 1;
+  transition: all 0.3s;
+
+  &.active {
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  .logo {
+    width: 35%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .v-btn:not(.v-btn--round).v-size--default {
+    width: 35px;
+    min-width: 20px;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+}
+
+nav {
+  opacity: 0;
+  height: 0;
+  transition: all 0.3s;
+
+  &.active {
+    opacity: 1;
+    transition: all 0.3s;
+    & + main {
+      display: none;
+    }
+  }
+
+  ul {
+    display: flex;
+    background: linear-gradient(to bottom, #f2561d 0%, #fedb3f 80%);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    padding-top: 80px;
+    left: 0;
+    z-index: 110;
+    box-sizing: border-box;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      width: 65%;
+      max-width: 350px;
+      display: block;
+      text-align: center;
+
+      & + img {
+        width: 60%;
+      }
+
+      a {
+        display: block;
+        width: 100%;
+        color: #8b3905;
+        font-size: 22px;
+
+        &:hover {
+          color: var(--main1);
+        }
+      }
+    }
+  }
+
+  .active#menu_button_wrapper {
+    z-index: 200;
+    top: 25px;
+    right: 25px;
+    position: fixed;
+    width: 30px;
+  }
+}
+
+.main {
+  position: fixed;
+  width: 100vw;
+}
+
+.v-application ul {
+  padding-left: 0;
+}
+
+article {
+  overflow: hidden;
+  min-height: calc(100vh - 52px);
+  margin-top: 52px;
+
+  &.show {
+    position: fixed;
+  }
+}
+
+.btn {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+  }
+}
+
+.goTop {
+  width: 15vw;
+  margin: 0 auto;
+  padding: 50px 0;
+
+  img {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+footer {
+  padding: 50px 0 120px 0;
+  background-color: var(--main);
+  text-align: center;
+
+  img {
+    width: 200px;
+  }
+}
+
+.BT {
+  display: flex;
+
+  a {
+    width: 50%;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.fix {
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  position: fixed;
+}

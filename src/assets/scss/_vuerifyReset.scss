@@ -1,0 +1,13 @@
+.v-btn__content {
+    flex: auto;
+}
+
+.v-btn--is-elevated {
+    box-shadow: none;
+}
+
+.v-btn:not(.v-btn--round).v-size--default {
+    height: auto;
+    min-width: 64px;
+    padding: initial;
+}

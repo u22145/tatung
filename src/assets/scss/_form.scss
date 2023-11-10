@@ -1,0 +1,76 @@
+.form {
+  > img {
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    &+p {
+      text-align: center;
+      font-size: 0.5rem;
+    }
+    p {
+      width: 25%;
+      font-size: 16px !important;
+      padding-bottom: 15px;
+    }
+
+    .v-text-field.v-text-field--enclosed {
+      width: 75%;
+    }
+
+    .v-text-field.v-text-field--solo:not(.v-text-field--solo-flat)
+      > .v-input__control
+      > .v-input__slot {
+      border-radius: 0;
+      border: 2px solid #000000;
+      box-shadow: none;
+    }
+
+    .v-text-field.v-text-field--solo .v-label {
+      top: calc(50% - 10px);
+      font-size: 14px;
+    }
+  }
+
+  .googleRecapcha {
+    font-size: 12px;
+    opacity: 0.1;
+    font-weight: 100;
+  }
+
+  .v-input--selection-controls .v-input__slot > .v-label,
+  .v-input--selection-controls .v-radio > .v-label,
+  a {
+    font-size: 12px;
+    color: #000000 !important;
+  }
+
+  a {
+    text-decoration: underline !important;
+  }
+
+  .v-input--selection-controls {
+    margin-top: 0;
+  }
+}
+
+.v-application form .primary--text {
+  color: #000000 !important;
+}
+
+.v-text-field.v-text-field--solo .v-input__control {
+  min-height: 30px;
+}
+
+.theme--light.v-btn.v-btn--has-bg,
+.theme--light.v-btn.v-btn--disabled.v-btn--has-bg {
+  background-color: rgba(245, 245, 245, 0%) !important;
+}
+
+.theme--light.v-btn:hover::before {
+  opacity: 0;
+}

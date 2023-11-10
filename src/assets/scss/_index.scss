@@ -1,0 +1,59 @@
+.home {
+  & > div {
+    padding: 30px 20px;
+  }
+
+  .titleBox {
+    padding: 20px 0;
+    background: linear-gradient(
+      to bottom,
+      #f2561d 20%,
+      #fedb3f 50%,
+      #ffffff 75%,
+      #fedb3f 85%
+    );
+    .titleImg {
+      margin-bottom: 20px;
+    }
+  }
+
+  .slickBox {
+    background-image: url(@/assets/img/index/slickBoxBg1.png);
+    background-repeat: repeat;
+    background-size: 750px 740px;
+    .item {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+      margin: 60px 0 20px 0;
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .itemBox {
+    padding-bottom: 50px;
+    background: linear-gradient(
+      to bottom,
+      #fedb3f 30%,
+      #ff7928 50%,
+      #fedb3f 100%
+    );
+
+    > img {
+      margin-bottom: 20px;
+    }
+  }
+
+  .txtBox {
+    background: linear-gradient(to bottom, #fedb3f 40%, #ff7928 100%);
+    padding-bottom: 80px !important;
+  }
+}
